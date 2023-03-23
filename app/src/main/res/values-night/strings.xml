@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello!</string>
+    <string name="say_hello">Say Hello</string>
+    <string name="default_num">0</string>
 </resources>

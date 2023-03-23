@@ -5,4 +5,6 @@
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
     <string name="hello">Hello!</string>
+    <string name="say_hello">Say Hello</string>
+    <string name="default_num">0</string>
 </resources>
