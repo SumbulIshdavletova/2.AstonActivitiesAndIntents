@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         mShowCount = findViewById(R.id.show_count)
 
         if (savedInstanceState != null) {
-            mShowCount!!.text = savedInstanceState.getInt("count_num").toString()
+            mShowCount?.text = savedInstanceState.getInt("count_num").toString()
             mCount = savedInstanceState.getInt("count_num")
         }
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     fun countUp(view: View?) {
         mCount++
         if (mShowCount != null) {
-            mShowCount!!.text = mCount.toString()
+            mShowCount?.text = mCount.toString()
         }
     }
 
