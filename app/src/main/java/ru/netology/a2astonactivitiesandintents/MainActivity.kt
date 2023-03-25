@@ -24,14 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun launchSecondActivity(view: View) {
-        val intent = Intent(this, SecondActivity::class.java)
-
-        val message = mCount.toString()
-        intent.putExtra("EXTRA_MESSAGE", message)
-        startActivity(intent)
-
-    }
 
     fun countUp(view: View?) {
         mCount++
