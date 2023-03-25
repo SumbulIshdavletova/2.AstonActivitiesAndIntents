@@ -10,13 +10,13 @@
         android:id="@+id/show_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/average_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/average_margin"
+        android:layout_marginBottom="@dimen/average_margin"
         android:text="@string/count_initial_value"
         android:textColor="@color/colorPrimary"
-        android:textSize="48sp"
+        android:textSize="@dimen/large_text_size"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +28,7 @@
         android:id="@+id/button_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_margin="@dimen/average_margin"
         android:background="@color/colorPrimary"
         android:onClick="countUp"
         android:text="@string/button_label_count"
@@ -42,9 +40,10 @@
 
 
     <EditText
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/average_margin"
         app:layout_constraintTop_toBottomOf="@id/button_count"
         app:layout_constraintVertical_chainStyle="packed" />
 
