@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     fun countUp(view: View?) {
         mCount++
         if (mShowCount != null) {
-            mShowCount!!.text = mCount.toString()
+            mShowCount?.text = mCount.toString()
         }
     }
 }
